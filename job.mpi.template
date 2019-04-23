@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#SBATCH -J $set_name                         # Job name
+#SBATCH -o $set_name.%j.out                   # Name of stdout output file (%j expands to jobId)
+#SBATCH -e $set_name.error.e%j                       # Name of stderr error file
+#SBATCH --nodes=1 --sockets-per-node=1 --cores-per-socket=12 --threads-per-core=2  #nodes / tasks distribution 
+#SBATCH -t 24:00:00                         # Run time (hh:mm:ss) 
+#SBATCH --mail-user vtiwari@umassd.edu
+
+#Request no GPUs
+#SBATCH --gres=gpu:M2050:0
+
+module load cuda/8.0
+module list 
+pwd
+date
+
+# Go into the directory containing the executable
+#
+cd /home/vtiwari/local_sw/mesa-r11554/CCSN_rem_mass_dis
+# Launch the MPI executable named "a.out"
+#
+export OMP_NUM_THREADS=48
+uname -a
+python execute_run.py $set_name $set_arg
