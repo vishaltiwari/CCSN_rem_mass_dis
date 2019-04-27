@@ -33,7 +33,7 @@ def main():
     print("Inside directory:")
     print(os.getcwd())
     print("Executing:")
-    #os.system('./rn')
+    os.system('./rn')
     print("DONE with executing the model")
     os.chdir('../')
     

@@ -12,7 +12,7 @@ def create_runs_complie(set_name,curr_set):
   os.chdir(dir_name)
   os.system("ls -al")
   # Make a copy of the example_make_ccsn in the current directoy
-  filein = open("/home/vtiwari/mesa-r11554/CCSN_rem_mass_dis/inlist_common.template")
+  filein = open("/home/vtiwari/local_sw/mesa-r11554/CCSN_rem_mass_dis/inlist_common.template")
   src = Template(filein.read())
   model_dir_list = [f for f in os.listdir('.') if os.path.isdir(f)]
   for model in curr_set:
@@ -28,7 +28,7 @@ def create_runs_complie(set_name,curr_set):
       continue
 
     #os.system("cp -r /home/vtiwari/mesa-r11554/astro_project/example_make_pre_ccsn/ "+run_name)
-    os.system("cp -r /home/vtiwari/mesa-r11554/CCSN_rem_mass_dis/25M_pre_ms_to_core_collapse "+run_name)
+    os.system("cp -r /home/vtiwari/local_sw/mesa-r11554/CCSN_rem_mass_dis/25M_pre_ms_to_core_collapse "+run_name)
     
     # cp the inlist_common file and change the mass and the Z value
     d = {'mass':mass , 'z':z}
@@ -88,7 +88,7 @@ def main():
     job_file.close()
     count += 1
     #pdb.set_trace()
-    #create_runs_complie(set_name,curr_set)
+    create_runs_complie(set_name,curr_set)
 
     # execute the runs:
     #pdb.set_trace()
