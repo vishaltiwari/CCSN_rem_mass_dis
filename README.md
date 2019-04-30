@@ -11,9 +11,23 @@ Exploration of Mass Distribution function of Black holes and Neutron Stars using
 
 ## Mesa Models:
 The following models from MESA were used during the study:
-TODO: Write a brief description of both the models used:
-- 25M_pre_ms_to_core_collapse:
-- example_ccsn_IIp:
+
+**1. 25M_pre_ms_to_core_collapse***: This model evolves a pre-main sequence star and terminates when the Fe core starts to fall in, and exceeds a threshold value. One can look at the video below, showing the evolution of a 24 solar mass star with z=0.01.
+  - One can see how the star burns the hydrogen in its core to He, and then He to carbon and oxygen, and then to heavier elements in a shell like structure. The abundance plot shows a shell like distribution, and burning of isotopes.
+  - Further the distintion between hydorgen layer and heavier isotopes can be seen using the Ye vs mass plot(at the bottom right).
+  - At the end of simulation, the Ye near the center of the star falls down, showing the formation of neutron rich isotopes, which in this case is Fe56.
+  - This model uses a 21 isotope nuclear reaction network.
+ 
+[![Pre-CCSN](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/pre_ccsn.png)](https://youtu.be/7sy38ll-mTc)
+
+
+**2. example_ccsn_IIp**: This model takes the saved model from the "25M_pre_ms_to_core_collapse" run and advances a shock, which burns the inner shells elements. This model was used to compute the fallback of material onto the remnant, which would increase it's final mass, which could go beyond the Si shell or even further. 
+
+- The variable paramter for this model is to amount of energy deposited at the edge of the Fe core. One value value of 1.56e51 was used in the run. Out of 97 models only 25 "25M_pre_ms_to_core_collapse" converged to a final state.
+
+- One can see the propogation of shock in the video below:
+
+[![CCSN-Shock](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/ccsn_shock.png)](https://youtu.be/y8ilgMQUdqQ)
 
 ## Computational Framework:
 To explore such a big parameter space, running indiviaul models is not feiasialbe, so I developed a framework where I could submit multiple models to be computeded over various nodes on carnie(UMass Dartmouth computer cluster). This is described as below:
