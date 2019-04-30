@@ -86,8 +86,6 @@ Looking at the results from the simulation runs:
 
 **Final Remnant Mass**
 
-**Final Remnant Mass**
-
 - To calculate the final remnant mass, I estimated how much mass would be bound to the star. To do this, I calculated the escape velocity as a function of radius and compared that with the velocity of the ejecta at that radius.
 - V_esc = sqrt(2*G*M_in/r_in)
 - If the velocity at that radius is less than the escape velocity, the mass interior to that location is bound and will fall onto the remnant.
