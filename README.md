@@ -30,9 +30,9 @@ To explore such a big parameter space, running indiviaul models is not feiasialb
 
 - Main Codes: create_param_sets.py, execute_run.py, create_IIp_param.py,execute_IIp_run.py, execute_jobs.py
 
-[[https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Framework_astro_project.png|alt=octocat]]
+![FrameWork](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Framework_astro_project.png)
 
- 
+
 ## Results:
 
 ## References:
