@@ -60,21 +60,44 @@ From these relations we expect that higher mass main sequence stars will have a 
 Looking at the results from the simulation runs:
 
 **Fe Core vs Initial Mass**
+- The following is a scatter plot showing the Fe core masses in the blue triangle and the Si shell mass in the orange square for each of the 97 models that were run. Each seperate plot shows a different metallicity value shown at the top of the subplot.
+- We can clearly see from the plots, that for a fixed metallictiy value, the Fe core and Si shell mass increases with progenitor mass, which is what we would expect.
+- Further we can see that for higher values of metallictiy we have a higher Fe core and Si shell mass. Because of the inverse relation with Ye.
 
 ![Fe Core vs Progenitor Mass](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/fe_sI_core.png)
 
 **Core mass and its effect on Metallicity**
+- This plots shows the Fe core mass vs progenitor mass of each model. The shade of the datapoint represents the metallictiy of that model. We can clearly see the relationship of the Z vs core mass.
+- Further we can say that the points above the max mass limit of a neutron star(~3 solar masses) will all be black holes. Ofcourse points below 3 soloar masses can be black holes, which depends on how much matter actually falls back onto the remnant.
 
 ![Core vs Initial Mass(with Z)](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fecore_mass_vs_main_seq_metal.png)
 
 **Fe Core Distribution Function**
+- From the Fe core masses we can make a distribution function of the number of remnanet having a paricular mass range.
+- The following plots show this distribution of Fe core masses. Here the bin size of the remnant massis 0.035 solar masses.
+- We can observe peaks ~1.8 solar masses and another around 2.3 solar masses. Timmes.et.al[1] get a similar valued peak at around 1.6 solar masses. They also get a major peak at 1.2 solar masses, which is not in this plot. This is because the "pre_ms_to_core_collapse" model failed to converge for masses [11-16] solar masses, which would have given this 1.2 solar mass peak.
+
 ![Fe Core Distribution Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_core_distribution.png)
 
 **Fe Core + Si Shell Distribution Function**
+
+- Similar mass distribution, with the addition of Si shell mass to the model.
+
 ![Fe Core + Si Shell Distribution Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_plus_si_core_distribution.png)
 
 **Final Remnant Mass**
+
+- To calculate the final remnant mass, I calculated how much mass would be bound to the star. To do this, I calculated the escape velocity as a function of radius and compared that with the velocity of the ejecta at that radius. If the velocity at that radius is less than the escape velocity, the mass iterior to that location is bound and will fall onto the remnant.
+- The following graph shows the curve for a model (M=29 Solar mass, Z=0.01). Mass interior to the crossing of the curves gives the fallback mass.
+
 ![Bound Mass Calculation](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/velocity_escape_graph.png)
+
+**Final remant Mass vs Main Sequence Mass**
+- Mass calculated using the above method is plotted on the scatter plot shown below.
+- One can see that for some of the low progenitor mass, the fallback is less than the Si shell mass.
+- For high mass progenitors, a large amount falls back into the remnant, as seen from the plot.
+- This is probably because of the energy deposition on the Fe core edge(which was set to 1.5e51 erg). 
+- As low mass stars are more lossly bound as compared to the higher mass stars. For the same energy, the shock is able to unbound large mass fractions as compared to the high mass stars.
 
 ![Final Mass Distribution](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/last_plot.png)
 
