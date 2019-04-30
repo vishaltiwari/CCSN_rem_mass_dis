@@ -1,4 +1,4 @@
-# Core Collapse Supernova remnant mass Distribution
+# Core Collapse Supernova Remnant Mass Distribution
 
 ## About:
 Stars having mass more that 11 Solar Masses undergo core-collapse supernova explosion, and leaves behind a compact objects, either a neutron star or a black hole, which would depend on the initial mass and the initial metallicity of the progenitor star.
@@ -13,7 +13,7 @@ Exploration of Mass Distribution function of Black holes and Neutron Stars using
 The following models from MESA were used during the study:
 TODO: Write a brief description of both the models used:
 - 25M_pre_ms_to_core_collapse:
-- example_ccsn_IIp
+- example_ccsn_IIp:
 
 ## Computational Framework:
 To explore such a big parameter space, running indiviaul models is not feiasialbe, so I developed a framework where I could submit multiple models to be computeded over various nodes on carnie(UMass Dartmouth computer cluster). This is described as below:
@@ -30,12 +30,8 @@ To explore such a big parameter space, running indiviaul models is not feiasialb
 
 - Main Codes: create_param_sets.py, execute_run.py, create_IIp_param.py,execute_IIp_run.py, execute_jobs.py
 
+[[https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Framework_astro_project.png|alt=octocat]]
 
-
-
-
-
- 
  
 ## Results:
 
