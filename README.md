@@ -17,7 +17,7 @@ I used the following MESA models for the study:
   - At the end of the simulation, the Ye near the center of the star falls, showing the formation of neutron-rich isotopes, which in this case is mostly Fe56.
   - This model uses a 21 isotope nuclear reaction network.
  
-[![PreCCSN](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/pre_ccsn.png)](https://youtu.be/7sy38ll-mTc)
+[![PreCCSN](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/pre_ccsn.png)](https://youtu.be/7sy38ll-mTc)
 
 
 **2. example_ccsn_IIp**: This model takes the saved model from the "25M_pre_ms_to_core_collapse" run and advances a shock, which burns the inner shell elements. This model was used to compute the fallback mass onto the remnant, which would increase its final mass, which could go beyond the Si shell.
@@ -26,7 +26,7 @@ I used the following MESA models for the study:
 - Out of 97 models only 25 "25M_pre_ms_to_core_collapse" converged to a final state.
 - One can see the propagation of shock and the nucleosynthetic yields(from Progenitor mass=24, Z=0.01 model) in the video below:
 
-[![CCSNShock](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/ccsn_shock.png)](https://youtu.be/y8ilgMQUdqQ)
+[![CCSNShock](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/ccsn_shock.png)](https://youtu.be/y8ilgMQUdqQ)
 
 ## Computational Framework:
 
@@ -61,14 +61,14 @@ Looking at the results from the simulation runs:
 - We can see from the plots, that for a fixed metallicity value, the Fe core and Si shell mass increases with progenitor mass, which is what we would expect.
 - Further, we can see that for higher values of metallicity we have a higher Fe core and Si shell mass. Because of the inverse relation with Ye.
 
-![Fe_Core_vs_Progenitor_Mass](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/fe_sI_core.png)
+![Fe_Core_vs_Progenitor_Mass](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/fe_sI_core.png)
 
 **Core mass and its effect on Metallicity**
 - This plot shows the Fe core mass vs. progenitor mass of each model. The grayscale shade of the data point represents the metallicity of that model. 
 - We can see that a higher metallicity for the same progenitor mass will have a more massive Fe core, something that we would expect from the mass and Ye relation.
 - Further, we can say that the points above the max mass limit of a neutron star(~3 solar masses) will all be black holes. Of course, points below 3 solar masses can be black holes, which depends on how much matter fell back onto the remnant.
 
-![Core_vs_Initial_Mass](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fecore_mass_vs_main_seq_metal.png)
+![Core_vs_Initial_Mass](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Fecore_mass_vs_main_seq_metal.png)
 
 **Fe Core Distribution Function**
 - From the Fe core masses of the models, we can make a distribution function of the number of remnants in a particular mass range.
@@ -76,13 +76,13 @@ Looking at the results from the simulation runs:
 - We can observe peaks at ~1.8 solar masses and another around 2.3 solar masses. Timmes.et.al[1] get a similar valued peak at around 1.6 solar masses. They also get a major peak at 1.2 solar masses, which is not in this plot. This is because the "pre_ms_to_core_collapse" model failed to converge for masses [11-16] solar masses, which would have given this 1.2 solar mass peak.
 -Code: analysis.py
 
-![Fe_Core_Distribution_Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_core_distribution.png)
+![Fe_Core_Distribution_Function](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Fe_core_distribution.png)
 
 **Fe Core + Si Shell Distribution Function**
 
 - Similar mass distribution, with the addition of Si shell mass to the model.
 
-![Fe_Core_plus_Si_Shell_Distribution_Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_plus_si_core_distribution.png)
+![Fe_Core_plus_Si_Shell_Distribution_Function](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Fe_plus_si_core_distribution.png)
 
 **Final Remnant Mass**
 
@@ -92,7 +92,7 @@ Looking at the results from the simulation runs:
 - The following graph shows the square of the escape velocity and the square of ejecta velocity, for a model (M=29 Solar mass, Z=0.01). Mass interior to the intersection of the curves gives the fallback mass.
 - Code: last_plot.py
 
-![Bound_Mass_Calculation](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/velocity_escape_graph.png)
+![Bound_Mass_Calculation](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/velocity_escape_graph.png)
 
 **Final remnant Mass vs. Main Sequence Mass**
 - Mass calculated using the above method is plotted on the scatter plot shown below.
@@ -101,7 +101,7 @@ Looking at the results from the simulation runs:
 - This is probably because of the energy deposition on the Fe core edge(~ 1.5 10^51 erg). 
 - As low mass stars are more loosely bound as compared to the higher mass stars. For the same energy, the shock can unbind large mass fractions as compared to the more massive stars.
 
-![Final_Mass_Distribution](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/last_plot.png)
+![Final_Mass_Distribution](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/last_plot.png)
 
 ## References:
 [1] Timmes, F. X., S. E. Woosley, and Thomas A. Weaver. "The neutron star and black hole initial mass function." arXiv preprint astro-ph/9510136 (1995). 
