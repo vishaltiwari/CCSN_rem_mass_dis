@@ -46,8 +46,37 @@ To explore such a big parameter space, running indiviaul models is not feiasialb
 
 ![FrameWork](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/Framework_astro_project.png)
 
+## Chandrasekhar mass for Neutron Stars:
+ - M_ch ~ M_ch0[1 + (Se/pi*Ye)^2]
+    - Se: Electronic entropy per baryon.
+    - Ye: Charge fraction Z/A
+  - Se: This is proportioanl to the Mass of the Iron core, which is in proportional to the mass of the initial star.
+  
+From these relations we expect that higher mass main sequence stars will have a higher mass Fe core. Also, a higher melatticity value will have a lower Ye value, which would give a more massive value of the M_ch. (From [1])
+
 
 ## Results:
+
+Looking at the results from the simulation runs:
+
+**Fe Core vs Initial Mass**
+
+![Fe Core vs Progenitor Mass](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/fe_sI_core.png)
+
+**Core mass and its effect on Metallicity**
+
+![Core vs Initial Mass(with Z)](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fecore_mass_vs_main_seq_metal.png)
+
+**Fe Core Distribution Function**
+![Fe Core Distribution Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_core_distribution.png)
+
+**Fe Core + Si Shell Distribution Function**
+![Fe Core + Si Shell Distribution Function](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/Fe_plus_si_core_distribution.png)
+
+**Final Remnant Mass**
+![Bound Mass Calculation](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/velocity_escape_graph.png)
+
+![Final Mass Distribution](https://github.com/vishaltiwari/CCSN_rem_mass_dis/blob/master/images/last_plot.png)
 
 ## References:
 [1] Timmes, F. X., S. E. Woosley, and Thomas A. Weaver. "The neutron star and black hole initial mass function." arXiv preprint astro-ph/9510136 (1995). 
