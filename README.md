@@ -1,6 +1,4 @@
-# Core Collapse Supernova Remnant Mass Distribution
-
-## About:
+## Introduction:
 Stars having a mass more than 11 Solar Masses undergo core-collapse supernova explosion, and leaves behind a compact object, either a neutron star or a black hole, which would depend on the initial mass and the initial metallicity of the progenitor star.
 In this project, I have explored the mass distribution function of the Fe core and inner shell masses using the MESA stellar code. The work is based on the work by Timmes.et.al[1].
 
@@ -102,6 +100,9 @@ Looking at the results from the simulation runs:
 - As low mass stars are more loosely bound as compared to the higher mass stars. For the same energy, the shock can unbind large mass fractions as compared to the more massive stars.
 
 ![Final_Mass_Distribution](https://raw.githubusercontent.com/vishaltiwari/CCSN_rem_mass_dis/master/images/last_plot.png)
+
+## Conclusion
+In the project, I evaluated the mass distribution function of CCSN remnants by calculating 97 mesa models over the parameter space of initial progenitor mass and metallicity. The distribution showed a major peak in the Fe core distribution function at ~1.8m solar masses, which is very close to the second peak in timmes.et.al[1] paper. Further, I saw an addition peak of ~2.3 solar mass. Further, I explored the effects of initial progenitor mass and its initial metallicity on remnant masses. I saw a correlation between remnant mass and progenitor mass. A similar correlation was found for initial metallicity and is something that was expected from the Chandrashekar mass formula.
 
 ## References:
 [1] Timmes, F. X., S. E. Woosley, and Thomas A. Weaver. "The neutron star and black hole initial mass function." arXiv preprint astro-ph/9510136 (1995). 
